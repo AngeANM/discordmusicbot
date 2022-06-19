@@ -50,7 +50,7 @@ fs.readdir(__dirname + "/bot/events/music/", (err, files) => {
 });
 
 client.distube.on("playSong", (message, queue, song) => message.channel.send(
-    `Playing \`${song.name}\` - \`${song.formattedDuration}`
+    `Listening To \`${song.name}\` - \`${song.formattedDuration}`
 ))
 
 client.login(require("./config/bot").token).catch(err => console.log(chalk.red.bold(err)))
